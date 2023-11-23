@@ -1,0 +1,52 @@
+@import "../../../styles/variable.scss";
+
+.this__day {
+  padding: 20px;
+  max-width: 400px;
+  border-radius: 20px;
+  width: 100%;
+  background: #4f4f4f;
+  box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+  margin-right: 50px;
+}
+
+.top__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  display: flex;
+  margin-bottom: 31px;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  svg {
+    width: 119px;
+    height: 119px;
+  }
+  .this__temp {
+    color: $primary-color;
+    font-size: 96px;
+    font-weight: 500;
+  }
+
+  .this__day_title {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 400;
+  }
+}
+
+.bottom {
+  .this__time,
+  .this__city {
+    color: #939cb0;
+    display: flex;
+    font-size: 25px;
+    font-weight: 400;
+  }
+  .this__time {
+    margin-bottom: 14px;
+  }
+}

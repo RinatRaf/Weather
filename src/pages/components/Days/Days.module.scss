@@ -1,0 +1,55 @@
+@import "../../../styles/variable.scss";
+
+.days {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  width: 100%;
+  border-radius: 0px 0px 20px 20px;
+  background: #4f4f4f;
+  box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+}
+
+.day_card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: #2e3035;
+  padding: 10px;
+  width: 149px;
+  transition: 0.3s;
+  cursor: pointer;
+
+  .day_title {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 7px;
+  }
+  .day_info {
+    color: #939cb0;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 12px;
+  }
+  .icon_id {
+    margin-bottom: 12px;
+  }
+  .temp_day {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .temp_night {
+    color: #939cb0;
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 6px;
+  }
+  .info {
+    color: #939cb0;
+    font-size: 13px;
+    font-weight: 400;
+  }
+}

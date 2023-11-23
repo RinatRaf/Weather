@@ -1,0 +1,87 @@
+@import "../../../styles/variable.scss";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  svg {
+    width: 65px;
+    height: 65px;
+    margin-right: 20px;
+  }
+}
+
+.change_theme,
+.logo {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.title {
+  color: $primary-color;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.citySelect {
+  border-radius: 10px;
+  background: #4f4f4f;
+  width: 194px;
+  height: 37px;
+  color: white;
+  text-align: center;
+}
+
+.searchInput {
+  margin-right: 20px;
+  background-color: #4f4f4f;
+  border-radius: 20px;
+  padding: 5px 15px;
+  color: white;
+  border: 1px;
+}
+
+.searchButton {
+  background-color: #4f4f4f;
+  color: white;
+  border-radius: 20px;
+  padding: 5px 15px;
+  border: 1px;
+}
+
+.box {
+  z-index: 9;
+  top: 120%;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  max-height: 300px;
+  overflow-y: auto;
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: white;
+  border-radius: 8px;
+}
+
+.box::-webkit-scrollbar {
+  display: none;
+}
+
+.searchForm {
+  position: relative;
+}
